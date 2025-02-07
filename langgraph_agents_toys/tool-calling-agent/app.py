@@ -1,6 +1,6 @@
 # app.py
 import streamlit as st
-from agent import Agent  # Import your Agent class from the original file
+from agent import Agent
 
 # Set up page configuration
 st.set_page_config(page_title="Claude-3 Chat Agent", page_icon="🤖")

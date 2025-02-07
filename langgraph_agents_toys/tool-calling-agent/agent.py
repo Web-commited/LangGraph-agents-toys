@@ -136,6 +136,3 @@ Answer: A bulldog weights 51 lbs
             additionalModelRequestFields=additional_model_fields,
         )
         return response["output"]["message"]["content"][0]["text"]
-
-agent=Agent()
-print(agent("How much does a Bulldog weigh?"))
