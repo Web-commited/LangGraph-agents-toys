@@ -1,9 +1,4 @@
 from dotenv import load_dotenv
-import json
-import os
-import re
-import sys
-import warnings
 import boto3
 from botocore.config import Config
 
@@ -30,6 +25,8 @@ class BedrockClient:
             region_name=region_name,
             config=self.config,
         )
+
+bedrock_rt=BedrockClient().client
 
 
 
@@ -87,7 +84,7 @@ Whenever you can, try to call multiple tools at once, to bring down inference ti
 Only look up information when you are sure of what you want. \
 If you need to look up some information before asking a follow up question, you are allowed to do that!
 """
-bedrock_rt=BedrockClient().client
+
 model = ChatBedrockConverse(
     client=bedrock_rt,
     model="anthropic.claude-3-haiku-20240307-v1:0",
