@@ -106,5 +106,3 @@ model = ChatBedrockConverse(
     max_tokens=None,
 )
 abot = Agent(model, [tool], system=prompt)
-result = abot.graph.invoke({"messages": messages})
-print(result["messages"][-1].content)

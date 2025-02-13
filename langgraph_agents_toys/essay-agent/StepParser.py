@@ -42,7 +42,7 @@ class StepParser:
             
             # Iterate through each item in the content list
             for index, item in enumerate(content):
-                st.write(f"**Item {index + 1}:**")
+                st.write(f"**{index + 1}:**")
                 st.write(item)
                 st.write("---")  
         
